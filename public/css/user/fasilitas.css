@@ -1,0 +1,63 @@
+.fasilitas-container {
+    width: 90%;
+    margin: 30px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #444;
+}
+
+.section-title {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.lab-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 70%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.layout-box {
+    width: 30%;
+    text-align: center;
+}
+
+.layout-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.layout-img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}

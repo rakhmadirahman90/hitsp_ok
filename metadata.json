@@ -1,0 +1,6 @@
+{
+  "name": "HITSP Portal",
+  "description": "Help Desk and IT Service Portal for submitting and managing institutional IT requests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

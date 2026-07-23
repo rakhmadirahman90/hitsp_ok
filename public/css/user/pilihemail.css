@@ -1,0 +1,132 @@
+/* ================= PAGE WRAPPER ================= */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    background: linear-gradient(135deg,#f1f5f9,#e2e8f0);
+}
+
+/* container halaman */
+.email-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* ================= TITLE ================= */
+
+.page-title{
+    font-size:30px;
+    font-weight:600;
+    color:#1e293b;
+    margin-bottom:8px;
+}
+
+.page-subtitle{
+    font-size:15px;
+    color:#64748b;
+    margin-bottom:40px;
+    max-width:420px;
+}
+
+/* ================= CARD ================= */
+
+.email-card{
+    background:#ffffff;
+    padding:45px 40px;
+    border-radius:18px;
+    box-shadow:0 15px 45px rgba(0,0,0,0.08);
+    max-width:500px;
+    width:100%;
+    transition:all .3s ease;
+}
+
+.email-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 55px rgba(0,0,0,0.12);
+}
+
+.email-card h3{
+    font-size:18px;
+    font-weight:600;
+    color:#1e293b;
+    margin-bottom:30px;
+}
+
+/* ================= BUTTON ================= */
+
+.email-actions{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* tombol modern */
+.btn-email{
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+    color:#ffffff;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:.3px;
+    transition:all .3s ease;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+/* hover */
+.btn-email:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    background:linear-gradient(135deg,#d97706,#b45309);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* tablet */
+@media (max-width:768px){
+
+    .page-title{
+        font-size:26px;
+    }
+
+    .email-card{
+        padding:35px 28px;
+    }
+
+}
+
+/* mobile */
+@media(max-width:480px){
+
+    .page-title{
+        font-size:22px;
+    }
+
+    .page-subtitle{
+        font-size:14px;
+    }
+
+    .email-actions{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn-email{
+        width:100%;
+        text-align:center;
+    }
+
+    .email-card{
+        padding:30px 22px;
+        border-radius:16px;
+    }
+
+}

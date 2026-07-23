@@ -1,0 +1,198 @@
+/* ================= KELOLA LAPORAN ================= */
+
+.admin-laporan-wrapper {
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    margin: 25px;
+    transition: all 0.3s;
+}
+
+.admin-laporan-wrapper:hover {
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.page-title {
+    font-size: 26px;
+    color: #1B3B5F;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.success-message {
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    background: #DFF2BF; /* hijau lembut */
+    color: #4F8A10;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ================= TABEL ================= */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.table th, .table td {
+    padding: 14px 12px;
+    text-align: left;
+    vertical-align: middle;
+    border: none;
+}
+
+.table th {
+    background: #1B3B5F;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    background: #f9f9f9;
+    transition: background 0.3s;
+}
+
+.table tr:nth-child(even) td {
+    background: #f0f0f0;
+}
+
+.table tr:hover td {
+    background: #eaf4ff;
+}
+
+.table td a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #1B3B5F;
+    transition: color 0.3s;
+}
+
+.table td a:hover {
+    color: #F77F00;
+    text-decoration: underline;
+}
+
+/* ================= BADGE STATUS ================= */
+.badge {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.bg-warning {
+    background-color: #F77F00;
+    color: #fff;
+}
+
+.bg-warning:hover {
+    background-color: #ff9933;
+}
+
+.bg-primary {
+    background-color: #1B3B5F;
+    color: #fff;
+}
+
+.bg-success {
+    background-color: #00b894;
+    color: #fff;
+}
+
+.bg-success:hover {
+    background-color: #33d39e;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    padding: 6px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.btn-info {
+    background: #0984e3;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background: #74b9ff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.btn-success {
+    background: #00b894;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: #55efc4;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.btn-danger {
+    background: #d63031;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #ff7675;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ================= TABLE RESPONSIVE ================= */
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+/* ================= LINK BUKTI ================= */
+.table td a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #1B3B5F;
+}
+
+.table td a:hover {
+    color: #F77F00;
+}
+
+/* ================= MEDIA QUERY ================= */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 22px;
+    }
+
+    .table th, .table td {
+        padding: 10px 8px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .badge {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+}

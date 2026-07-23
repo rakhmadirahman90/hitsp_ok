@@ -1,0 +1,172 @@
+/* ===== WARNA UTAMA (TIDAK DIUBAH) ===== */
+
+:root {
+
+    --orange: #F77F00;
+
+    --blue-dark: #1D3557;
+
+    --blue-light: #C7DDF0;
+
+}
+
+
+
+/* ===== WRAPPER ===== */
+
+.visi-misi-container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 55px auto;
+
+    display: flex;
+
+    gap: 32px;
+
+    justify-content: space-between;
+
+}
+
+
+
+/* ===== BOX ===== */
+
+.box {
+
+    flex: 1;
+
+    background: var(--blue-light);
+
+    border: 2.5px solid var(--orange);
+
+    border-radius: 16px;
+
+    padding: 28px 30px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+    transition: 0.28s ease-in-out;
+
+}
+
+
+
+/* Hover modern */
+
+.box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+
+}
+
+
+
+/* ===== HEADER ===== */
+
+.box-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+.box-header i {
+
+    font-size: 30px;
+
+    color: var(--blue-dark);
+
+    padding: 10px;
+
+    background: rgba(255,255,255,0.45);
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+
+
+.box-header h2 {
+
+    font-size: 23px;
+
+    margin: 0;
+
+    font-weight: 700;
+
+    color: var(--blue-dark);
+
+}
+
+
+
+/* ===== VISI TEXT ===== */
+
+.visi-text {
+
+    color: var(--blue-dark);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    text-align: justify;
+
+    margin-top: 12px;
+
+}
+
+
+
+/* ===== MISI LIST ===== */
+
+.misi-list {
+
+    padding-left: 22px;
+
+    line-height: 1.75;
+
+    color: var(--blue-dark);
+
+    font-size: 16px;
+
+    text-align: justify;
+
+}
+
+
+
+.misi-list li {
+
+    margin-bottom: 12px;
+
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 840px) {
+
+    .visi-misi-container {
+
+        flex-direction: column;
+
+    }
+
+}
+

@@ -1,0 +1,127 @@
+/* ================= GLOBAL STYLING ================= */
+.admin-wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* ================= BUTTON GROUP ================= */
+.button-group {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button-group .btn {
+    padding: 10px 25px;
+    margin: 0 5px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-group .btn-primary {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+}
+
+.button-group .btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+}
+
+.button-group .btn:hover {
+    opacity: 0.9;
+}
+
+/* ================= TABLE STYLING ================= */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f4f6f8;
+}
+
+.table tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* ================= TABEL BUTTON ================= */
+.table .btn-info {
+    background-color: #0ea5e9;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.table .btn-info:hover {
+    background-color: #0284c7;
+    color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 992px) {
+    .table th, .table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .button-group .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .admin-wrapper {
+        padding: 15px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,72 @@
+/* ===== CONTAINER UTAMA ===== */
+.struktur-container {
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== JUDUL ===== */
+.judul-section {
+    text-align: center;
+    color: #B22222;        /* Merah */
+    font-size: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* ===== STUKTUR ORGANISASI IMAGE BOX ===== */
+.struktur-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 3px solid #1D3557;      /* Abu */
+    border-radius: 12px;
+}
+
+.struktur-img {
+    width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: auto;
+}
+
+/* ===== CARD JUDUL ===== */
+.card-title {
+    width: 90%;
+    margin: 30px auto 10px;
+    background: #1D3557;        /* Abu tua */
+    padding: 6px 12px;
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ===== CARD BOX ===== */
+.card-box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #C7DDF0;         /* Biru muda */
+    border: 3px solid #B22222;   /* Merah border */
+    padding: 15px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.foto-profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #1D3557;
+}
+
+.info p {
+    margin: 3px 0;
+    font-size: 14px;
+}

@@ -1,0 +1,170 @@
+/* ============================
+   TRACKING STATUS PAGE - MODERN (FINAL)
+=============================== */
+
+.tracking-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 15px;
+}
+
+.tracking-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #1D3557;
+}
+
+/* TABLE WRAPPER */
+.tracking-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #FFDDDD;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.tracking-table:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.tracking-table th {
+    background: #C7DDF0;
+    padding: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1D3557;
+    letter-spacing: 0.3px;
+}
+
+/* TABLE BODY */
+.tracking-table td {
+    padding: 13px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    transition: 0.25s ease;
+}
+
+/* ROW STRIPES */
+.tracking-table tr:nth-child(even) {
+    background: #FFD5D5;
+}
+
+/* HOVER EFFECT */
+.tracking-table tbody tr:hover {
+    background: #ffc6c6;
+    transform: scale(1.003);
+}
+
+/* ============================
+   STATUS (Tanpa Badge)
+=============================== */
+
+/* Kolom status biar stabil */
+.tracking-table td:nth-child(6),
+.tracking-table th:nth-child(6) {
+    width: 120px;
+}
+
+/* Hanya teks, tidak lagi seperti button */
+.status {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Warna status */
+.status.proses {
+    color: #b45309;
+}
+
+.status.menunggu {
+    color: #1d4ed8;
+}
+
+.status.selesai {
+    color: #0f9d58;
+}
+
+/* ============================
+   EYE ICON
+=============================== */
+
+.eye-icon {
+    cursor: pointer;
+    font-size: 17px;
+    color: #333;
+    transition: 0.2s ease;
+}
+
+.eye-icon:hover {
+    color: #0f62fe;
+    transform: scale(1.15);
+}
+/* ============================
+   RESPONSIVE TABLE
+=============================== */
+
+/* Untuk layar max 768px (Tablet & HP besar) */
+@media (max-width: 768px) {
+
+    .tracking-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .tracking-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tracking-table th,
+    .tracking-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    /* Aktifkan scroll horizontal jika tabel melebar */
+    .tracking-container {
+        overflow-x: auto;
+    }
+
+    .tracking-table {
+        min-width: 700px; /* biar tabel tidak memaksa mengecil */
+    }
+}
+
+/* Untuk layar max 480px (HP kecil) */
+@media (max-width: 480px) {
+
+    .tracking-title {
+        font-size: 18px;
+    }
+
+    .tracking-table th,
+    .tracking-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .eye-icon {
+        font-size: 15px;
+    }
+
+    /* Table wrapper scroll */
+    .tracking-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tracking-table {
+        min-width: 650px;
+    }
+}

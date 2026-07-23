@@ -1,0 +1,38 @@
+# ------------------------------------------------------------------------------
+# KONFIGURASI INTERNAL LARAVEL
+# ------------------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # ------------------------------------------------------------------------------
+    # PERBAIKAN AKSES FOTO (TAMBAHAN)
+    # Memastikan folder fisik diabaikan oleh routing Laravel
+    # ------------------------------------------------------------------------------
+    RewriteCond %{REQUEST_URI} ^/(storage|images|uploads|fasilitas_img) [NC]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # KODE BARU SEBELUMNYA: Izinkan akses langsung ke folder penyimpanan fisik
+    # Menangani folder storage/fasilitas_img dan images
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^(storage|images|uploads|fasilitas_img)/.*\.(webp|jpeg|jpg|png|gif|bmp|ico)$ - [L]
+
+    # Menangani Header Otorisasi
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP_AUTHORIZATION}]
+
+    # Redirect Trailing Slashes
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Mengarahkan semua request ke index.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

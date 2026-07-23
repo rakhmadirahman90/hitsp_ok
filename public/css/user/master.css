@@ -1,0 +1,129 @@
+/* FONT */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* =========================
+   WRAPPER UTAMA
+========================= */
+.masterplan-container {
+    width: 100%;
+    padding: 35px 0;
+    background: #F6F9FC;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #1D3557;
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   GRID (SIDEBAR + CONTENT)
+========================= */
+.main-grid {
+    display: grid;
+    grid-template-columns: 26% 1fr;
+    gap: 35px;
+    width: 92%;
+    margin: auto;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    border-left: 6px solid #D97706;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.sidebar-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1D3557;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #D97706;
+    margin-bottom: 18px;
+}
+
+.sidebar-menu .menu-item {
+    display: block;
+    padding: 12px 8px;
+    color: #1D3557;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+    margin-bottom: 8px;
+}
+
+.sidebar-menu .menu-item:hover {
+    background: #80B0DB;
+    color: white;
+    padding-left: 14px;
+}
+
+/* Active Menu (Optional) */
+.sidebar-menu .menu-item.active {
+    background: #4169E1;
+    color: white;
+    font-weight: 600;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.content-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* PDF VIEWER */
+.pdf-viewer {
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 12px;
+    background: #f0f0f0;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pdf-viewer {
+        height: 550px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 22px;
+    }
+
+    .pdf-viewer {
+        height: 420px;
+    }
+
+    .sidebar-title {
+        font-size: 14px;
+    }
+
+    .menu-item {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,133 @@
+/* ================= DETAIL EMAIL LEMBAGA ================= */
+.admin-wrapper {
+    padding: 20px;
+    background-color: #f9f9f9; /* lebih terang dari sidebar */
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1B3B5F; /* warna utama layout (navy) */
+    margin-bottom: 20px;
+}
+
+/* Wrapper tabel detail */
+.detail-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.detail-wrapper h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1B3B5F;
+    margin-bottom: 15px;
+}
+
+/* Tabel detail */
+.detail-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.detail-wrapper table th,
+.detail-wrapper table td {
+    padding: 10px 15px;
+    border: 1px solid #e2e8f0;
+}
+
+.detail-wrapper table th {
+    background-color: #D9D9D9;
+    color: #1B3B5F;
+    text-align: left;
+    width: 30%;
+}
+
+/* Tombol aksi */
+.action-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.action-wrapper .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Tombol Setuju */
+.btn-success {
+    background-color: #1B3B5F; /* navy */
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #145078; /* navy gelap */
+}
+
+/* Tombol Tolak */
+.btn-danger {
+    background-color: #F77F00; /* oranye */
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #e06700; /* oranye gelap */
+}
+
+/* Input alasan penolakan */
+#alasanTolakWrapper {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#alasanTolakWrapper label {
+    font-weight: 500;
+    color: #1B3B5F; /* navy */
+}
+
+#alasanTolakWrapper textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    resize: vertical;
+}
+
+#alasanTolakWrapper button {
+    float: right;
+    background-color: #1B3B5F; /* navy */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#alasanTolakWrapper button:hover {
+    background-color: #145078;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .action-wrapper {
+        flex-direction: column;
+    }
+
+    #alasanTolakWrapper button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

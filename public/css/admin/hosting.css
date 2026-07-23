@@ -1,0 +1,253 @@
+/* admin-domain.css */
+
+.admin-wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1B3B5F;
+    margin-bottom: 25px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table thead {
+    background: #1B3B5F;
+    color: #fff;
+    font-weight: 500;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background: #e0f0ff;
+}
+
+.btn-info {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    background: #1e40af;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.bg-warning {
+    background-color: #facc15;
+    color: #1e1e1e;
+}
+
+.bg-success {
+    background-color: #16a34a;
+    color: #fff;
+}
+
+.modal-body pre {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+/* =======================================
+   GLOBAL
+======================================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.admin-wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1B3B5F;
+    margin-bottom: 20px;
+}
+
+/* =======================================
+   TABLE
+======================================= */
+table.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+table.table thead {
+    background: linear-gradient(135deg, #1B3B5F, #0E243A);
+    color: #fff;
+}
+
+table.table thead th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+table.table tbody td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+table.table tbody tr:hover {
+    background-color: #f0f7ff;
+}
+
+/* =======================================
+   BADGE STATUS
+======================================= */
+.badge {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bg-warning {
+    background-color: #facc15;
+    color: #1a1a1a;
+}
+
+.bg-success {
+    background-color: #16a34a;
+    color: #fff;
+}
+
+/* =======================================
+   BUTTON
+======================================= */
+.btn {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-info {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #1e40af;
+}
+
+.btn-success {
+    background-color: #16a34a;
+    color: #fff;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #15803d;
+}
+
+.btn-secondary {
+    background-color: #6b7280;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+}
+
+/* =======================================
+   MODAL
+======================================= */
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+    background: #1B3B5F;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.modal-body label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.modal-body input.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.modal-body input.form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.2);
+    outline: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 15px 0;
+}

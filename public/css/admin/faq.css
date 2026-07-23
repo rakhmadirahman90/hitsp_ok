@@ -1,0 +1,76 @@
+.admin-faq-container h2 {
+    margin-bottom: 20px;
+    color: #1b3b5f;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.faq-form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.faq-form textarea {
+    grid-column: span 2;
+    height: 90px;
+}
+
+.faq-form button {
+    grid-column: span 2;
+    padding: 10px;
+    background: #1b3b5f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Table */
+.faq-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.faq-table th,
+.faq-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.faq-table th {
+    background: #1b3b5f;
+    color: #fff;
+}
+
+.action {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background: #ffc107;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}

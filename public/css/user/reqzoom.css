@@ -1,0 +1,105 @@
+/* CONTAINER */
+.zoom-wrapper{
+    max-width:900px;
+    margin:40px auto;
+    background:#EDE7E7;
+    padding:32px 32px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* JUDUL */
+.form-title{
+    text-align:center;
+    font-weight:600;
+    font-size:22px;
+    margin-bottom:30px;
+    color:#374151;
+}
+
+/* GROUP */
+.zoom-form .form-group{
+    margin-bottom:18px;
+}
+
+/* LABEL */
+.zoom-form label{
+    display:block;
+    font-size:13px;
+    margin-bottom:8px;
+    color:#4b5563;
+}
+
+/* INPUT */
+.zoom-form input,
+.zoom-form textarea{
+    width:100%;
+    height:44px;
+    padding:10px 14px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    font-family:'Poppins', sans-serif;
+    font-size:14px;
+    background:#fff;
+    box-sizing:border-box;
+}
+
+/* TEXTAREA */
+.zoom-form textarea{
+    height:auto;
+    resize:vertical;
+}
+
+/* FOCUS */
+.zoom-form input:focus,
+.zoom-form textarea:focus{
+    outline:none;
+    border-color:#D97706;
+    box-shadow:0 0 0 2px rgba(217,119,6,.15);
+}
+
+/* ===== WAKTU MULAI & SELESAI (INI YANG DIRAPIKAN) ===== */
+.form-row{
+    display:flex;
+    gap:24px;               /* ⬅️ JARAK JELAS */
+    align-items:flex-start; /* ⬅️ TIDAK BERTUMPUK */
+}
+
+.form-row .form-group{
+    flex:1;
+    margin-bottom:0;
+}
+
+/* BUTTON */
+.form-action{
+    margin-top:28px;
+    text-align:right;
+}
+
+.btn-submit{
+    background:#D97706;
+    color:#fff;
+    border:none;
+    padding:12px 36px;
+    border-radius:999px;
+    cursor:pointer;
+    font-weight:500;
+    font-size:14px;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width:768px){
+    .zoom-wrapper{
+        margin:20px 16px;
+        padding:24px 20px;
+    }
+
+    .form-row{
+        flex-direction:column;
+        gap:18px;   /* ⬅️ tetap ada jarak di HP */
+    }
+
+    .form-action{
+        text-align:center;
+    }
+}

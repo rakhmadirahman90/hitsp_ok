@@ -1,0 +1,211 @@
+/* =========================
+   GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #D9D9D9;
+    color: #374151;
+    font-size: 14px;
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1B3B5F; 
+}
+
+/* =========================
+   ALERT
+========================= */
+.alert-success {
+    background: #dcfce7;
+    color: #065F46;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    border-left: 4px solid #16a34a;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   TABLE DAFTAR REQUEST
+========================= */
+.zoom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.zoom-table th,
+.zoom-table td {
+    padding: 14px 12px;
+    text-align: left;
+}
+
+.zoom-table th {
+    background: #F77F00; /* aksen header */
+    color: #fff;
+    font-weight: 600;
+}
+
+.zoom-table td {
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+}
+
+.zoom-table tr:hover {
+    background: #f9fafb;
+    transition: background 0.2s ease;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+.badge {
+    display: inline-block;
+    padding: 5px 14px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.2s ease;
+}
+
+.badge.pending {
+    background: #FBBF24; /* kuning aksen */
+    color: #78350F;
+}
+
+.badge.approved {
+    background: #34D399; /* hijau lembut */
+    color: #065F46;
+}
+
+.badge.rejected {
+    background: #FCA5A5; /* merah lembut */
+    color: #991B1B;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn,
+.btn-approve {
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Default button */
+.btn {
+    padding: 8px 16px;
+    background: #1B3B5F;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #F77F00;
+    color: #1B3B5F;
+    transform: translateY(-2px);
+}
+
+/* Approve button */
+.btn-approve {
+    padding: 8px 20px;
+    background: #16A34A;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-approve:hover {
+    background: #15803D;
+}
+
+/* =========================
+   DETAIL REQUEST PAGE
+========================= */
+.detail-list {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    list-style: none;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.detail-list li {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.detail-list strong {
+    display: inline-block;
+    width: 160px;
+    color: #1B3B5F;
+}
+
+/* =========================
+   FORM INPUT (DETAIL PAGE)
+========================= */
+form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1B3B5F;
+    display: block;
+    margin-bottom: 6px;
+}
+
+form input[type="url"] {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+form input[type="url"]:focus {
+    border-color: #F77F00;
+    box-shadow: 0 0 0 2px rgba(247,127,0,0.2);
+    outline: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .zoom-table th, .zoom-table td {
+        padding: 10px 8px;
+    }
+
+    .detail-list {
+        padding: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .btn, .btn-approve {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
